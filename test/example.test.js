@@ -1,6 +1,6 @@
 const assert = require('assert');
 
-describe('Exemplo', function(){
+describe('Exemplo a', function(){
     it('Deve somar corretamente', function(){
         assert.strictEqual(1+1,2)
     })
