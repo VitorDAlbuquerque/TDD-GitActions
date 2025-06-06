@@ -22,6 +22,10 @@ class Shopping {
     listItens() {
         return this.itens;
     }
+
+    clearCart() {
+        this.itens = [];
+    }
 }
 
 module.exports = Shopping;

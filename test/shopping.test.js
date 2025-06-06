@@ -43,4 +43,11 @@ describe('My shopping cart', function(){
     it('Deve atualizar a quanitdade corretamente', function(){
         assert.strictEqual(1+1,2)
     })
+
+    it('Deve limpar o carrinho', function() {
+        shopping.addItem({ name: "cola", price: 4 });
+        shopping.addItem({ name: "Meat", price: 23 });
+        shopping.clearCart();
+        assert.strictEqual(shopping.itens.length, 2);
+    });
 })
