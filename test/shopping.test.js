@@ -54,6 +54,6 @@ describe('My shopping cart', function(){
     it('Deve atualizar a quantidade corretamente', function() {
         shopping.addItem({ name: "cola", price: 4, quantity: 1 });
         shopping.updateQuantity("cola", 5);
-        assert.strictEqual(shopping.itens[0].quantity, 7);
+        assert.strictEqual(shopping.itens[0].quantity, 5);
     });
 })
