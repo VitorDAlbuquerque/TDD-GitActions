@@ -48,6 +48,6 @@ describe('My shopping cart', function(){
         shopping.addItem({ name: "cola", price: 4 });
         shopping.addItem({ name: "Meat", price: 23 });
         shopping.clearCart();
-        assert.strictEqual(shopping.itens.length, 2);
+        assert.strictEqual(shopping.itens.length, 0);
     });
 })
