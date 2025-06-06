@@ -26,6 +26,13 @@ class Shopping {
     clearCart() {
         this.itens = [];
     }
+
+    updateQuantity(name, quantity) {
+        const item = this.itens.find(item => item.name === name);
+        if (item) {
+            item.quantity = quantity;
+        }
+    }
 }
 
 module.exports = Shopping;
